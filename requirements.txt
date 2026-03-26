@@ -1,0 +1,17 @@
+"""
+Requirements for Traffic Simulator
+No external dependencies required for core simulation
+Optional dependencies for enhanced features
+"""
+
+# Core (no external dependencies needed)
+# - Python 3.8+
+
+# Optional for testing
+pytest>=7.0.0
+pytest-cov>=3.0.0
+
+# Optional for visualization (future)
+# pygame>=2.1.0
+# PyQt6>=6.0.0
+# matplotlib>=3.5.0
