@@ -129,14 +129,14 @@ class TrafficSimulatorGame:
         """Display game over screen"""
         os.system('cls' if os.name == 'nt' else 'clear')
         stats = self.engine.get_game_stats()
-        
+    
         print("\n" + "="*60)
         print("              GAME OVER")
         print("="*60)
         print(f"Final Score: {stats['score']}")
         print(f"Cars Passed: {stats['cars_passed']}")
         print(f"Total Wait Time: {stats['total_wait_time']:.1f}s")
-        print(f"Collisions: {stats['collisions']}")
+        print(f"Collisions: {stats['collisions']}")  # ← Make sure this is here
         print("="*60 + "\n")
     
     def display_help(self):
