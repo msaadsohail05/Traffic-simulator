@@ -20,10 +20,6 @@ traffic simulator/
 │   ├── entities.py              # Core game entities (Car, Road, Intersection, TrafficLight)
 │   ├── simulation_engine.py     # Main simulation loop and game mechanics
 │   └── game.py                  # CLI game controller and UI
-├── tests/
-│   └── test_simulator.py        # Unit tests for all components
-├── README.md                    # This file
-└── requirements.txt             # Python dependencies
 ```
 
 ## 🧩 Core Entities
@@ -190,28 +186,6 @@ A 2×2 grid intersection setup:
    - Anticipate traffic surges
    - Adjust lights before congestion occurs
 
-## 🧪 Testing
-
-Run unit tests:
-
-```bash
-python -m pytest tests/test_simulator.py -v
-```
-
-Or using unittest:
-
-```bash
-python tests/test_simulator.py
-```
-
-### Test Coverage
-- Entity creation and manipulation
-- Car movement and stopping logic
-- Queue tracking
-- Traffic light state transitions
-- Simulation engine initialization and game loop
-- Scoring calculations
-
 ## 📋 Installation
 
 ### Requirements
@@ -227,18 +201,7 @@ python tests/test_simulator.py
    python src/game.py
    ```
 
-## 🚀 Future Enhancements
 
-- [ ] Graphical UI (Pygame/PyQt)
-- [ ] Real-time visualization of traffic flow
-- [ ] Multiple difficulty levels
-- [ ] Advanced AI for traffic prediction
-- [ ] Custom map editor
-- [ ] Network multiplayer
-- [ ] Leaderboards
-- [ ] Replay system
-- [ ] Advanced collision detection
-- [ ] Variable spawn rates based on time of day
 
 ## 📝 API Reference
 
