@@ -46,11 +46,6 @@ A fully functional Python-based traffic control simulation game implementing you
 - Command-based light control
 - Game over screen with final stats
 
-### ✅ Comprehensive Testing
-- **23 unit tests** - All passing ✅
-- Tests cover all entities and core engine
-- Validates movement, queuing, scoring, and light control
-
 ### ✅ Standalone Demo Modes
 - **Headless mode**: Run simulation without UI, output statistics
 - **Controlled mode**: Auto-switching traffic lights every 10 seconds
@@ -184,33 +179,6 @@ traffic simulator/
 
 **Total**: 1,100+ lines of production code
 
----
-
-## 🧪 Test Results
-
-```
-Ran 23 tests in 0.001s
-OK ✅
-
-Test Breakdown:
-✅ Car Entity Tests (5)
-   - Creation, movement (N,S,E,W), stopping, wait time
-
-✅ Road Entity Tests (3)
-   - Creation, adding cars, queue length tracking
-
-✅ TrafficLight Tests (3)
-   - Creation, state updates, manual control
-
-✅ Intersection Tests (3)
-   - Creation, road connections, light states
-
-✅ SimulationEngine Tests (9)
-   - Initialization, game control, car spawning
-   - Light management, stats, tick system
-```
-
----
 
 ## 🚀 Features
 
@@ -302,23 +270,6 @@ Queue Length:     14
 
 ## 🚀 Running the Game
 
-### Quick Start
-```bash
-# Navigate to project
-cd "c:\Users\ABC\Documents\traffic simulator"
-
-# Play game
-python main.py
-
-# Or run demo
-python simulation_demo.py --duration 60 --mode controlled
-```
-
-### Full Test Suite
-```bash
-python tests/test_simulator.py -v
-```
-
 ### Headless Simulation
 ```bash
 python simulation_demo.py --duration 180 --mode headless
@@ -391,9 +342,6 @@ The Smart Traffic Control Simulator is a **complete, functional, and tested** im
 ✅ Production-quality code with type hints and documentation
 ✅ Extensible architecture for future enhancements
 
-**Status**: Ready to play! 🚗🚕🚙
-
----
 
 **Created**: March 26, 2026
 **Status**: Complete and Tested ✅
