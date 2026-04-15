@@ -8,7 +8,6 @@ A fully functional traffic control simulation game with:
 - Tick-based game loop (100ms intervals)
 - Scoring system based on traffic flow and congestion
 - CLI game controller
-- Comprehensive unit tests (23 passing tests)
 - Standalone demo modes (headless, controlled)
 
 ---
@@ -42,21 +41,10 @@ A fully functional traffic control simulation game with:
    - Scoring weights
    - Map definitions
 
-### Demo & Testing
-5. **`simulation_demo.py`** (120 lines)
-   - Headless mode: Run without UI, output statistics
-   - Controlled mode: Auto-switching traffic lights every 10s
-   - Command-line arguments for customization
-
-6. **`tests/test_simulator.py`** (185 lines)
-   - 23 unit tests covering all entities and engine
-   - Tests for movement, queuing, lights, scoring
-   - All tests passing ✅
 
 ### Documentation
 7. **`README.md`** - Complete 300+ line documentation
-8. **`QUICKSTART.md`** - Quick start guide with examples
-9. **`requirements.txt`** - Python dependencies
+8. **`requirements.txt`** - Python dependencies
 
 ---
 
@@ -108,20 +96,7 @@ light 2 EW RED     # Set intersection 2 east-west to red
 quit               # Exit early
 ```
 
-### Run Demos
-```bash
-# Headless simulation (statistics only)
-python simulation_demo.py --duration 30 --mode headless
 
-# Controlled simulation (auto lights)
-python simulation_demo.py --duration 30 --mode controlled
-```
-
-### Run Tests
-```bash
-python tests/test_simulator.py -v
-# Output: Ran 23 tests in 0.01s - OK
-```
 
 ---
 
@@ -140,21 +115,6 @@ python tests/test_simulator.py -v
 4. **Scoring**: Weighted sum of metrics (flow - wait - collisions - congestion)
 
 ---
-
-## 📊 Test Results
-
-```
-Ran 23 tests in 0.011s - OK
-
-Test Coverage:
-✅ Car entity (5 tests)
-✅ Road entity (3 tests)
-✅ TrafficLight entity (3 tests)
-✅ Intersection entity (3 tests)
-✅ SimulationEngine (9 tests)
-
-All tests passing!
-```
 
 ---
 
@@ -221,12 +181,7 @@ traffic simulator/
 │   ├── simulation_engine.py     # Main simulation
 │   ├── game.py                  # CLI controller
 │   └── config.py                # Configuration
-├── tests/
-│   └── test_simulator.py        # Unit tests (23 tests)
-├── simulation_demo.py           # Standalone demo
-├── README.md                    # Full documentation
-├── QUICKSTART.md                # Quick start guide
-└── requirements.txt             # Dependencies
+|    └── requirements.txt             # Dependencies
 ```
 
 ---
@@ -262,7 +217,6 @@ The Smart Traffic Control Simulator is a complete, functional traffic management
 - ✅ Full backend simulation engine
 - ✅ Realistic car and road physics
 - ✅ Interactive CLI gameplay
-- ✅ Comprehensive testing
 - ✅ Extensible architecture
 - ✅ Production-ready code quality
 
@@ -270,5 +224,3 @@ The Smart Traffic Control Simulator is a complete, functional traffic management
 
 ---
 
-Created: March 26, 2026
-Status: Complete and Tested ✅
