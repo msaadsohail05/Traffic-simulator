@@ -134,26 +134,26 @@ class SimulationEngine:
     Detect and handle collisions between cars on the same road.
     Cars at the same position or very close together collide.
     """
-    for road in self.roads.values():
-        if len(road.cars) < 2:
-            continue
-        
-        # Check each pair of cars on the road
-        for i in range(len(road.cars)):
-            for j in range(i + 1, len(road.cars)):
-                car1 = road.cars[i]
-                car2 = road.cars[j]
-                
-                # Calculate distance between cars
-                x1, y1 = car1.position
-                x2, y2 = car2.position
-                
-                # Distance threshold (collision radius)
-                distance = ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
-                
-                # Collision occurs if cars are within 2 units
-                if distance < 2.0:
-                    self.handle_collision(car1, car2, road)
+        for road in self.roads.values():
+            if len(road.cars) < 2:
+                continue
+            
+            # Check each pair of cars on the road
+            for i in range(len(road.cars)):
+                for j in range(i + 1, len(road.cars)):
+                    car1 = road.cars[i]
+                    car2 = road.cars[j]
+                    
+                    # Calculate distance between cars
+                    x1, y1 = car1.position
+                    x2, y2 = car2.position
+                    
+                    # Distance threshold (collision radius)
+                    distance = ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+                    
+                    # Collision occurs if cars are within 2 units
+                    if distance < 2.0:
+                        self.handle_collision(car1, car2, road)
     
     def handle_collision(self, car1: Car, car2: Car, road: Road):
         """
